@@ -1,4 +1,4 @@
-function changeText() {
-  document.getElementById("bio").innerText =
-    "You clicked the button! 🎉 Now you're interacting with JavaScript!";
+function showMessage() {
+  const message = document.getElementById("message");
+  message.textContent = "Thanks for visiting my website 💖";
 }
