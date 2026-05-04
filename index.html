@@ -3,79 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amy | About Me</title>
+  <title>Amy | Personal Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="navbar">
-    <h2>Amy</h2>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="header">
+  <a href="#" class="logo">Amy</a>
 
-  <section class="hero">
+  <nav class="nav" id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<main>
+  <section class="hero" id="home">
     <div class="hero-text">
-      <p class="tag">Hello, welcome to my website</p>
-      <h1>Hi, I’m <span>Amy</span></h1>
-      <p class="intro">
-        I’m learning how to build websites with HTML, CSS, and JavaScript.
-        This is my personal About Me page.
+      <p class="eyebrow">Personal Website</p>
+      <h1>Hello, I’m <span>Amy</span>.</h1>
+      <p class="hero-description">
+        A creative student learning web development and building clean,
+        modern websites with HTML, CSS, and JavaScript.
       </p>
-      <button onclick="showMessage()">Click Me</button>
-      <p id="message"></p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
     </div>
 
-    <div class="profile-card">
-      <img src="https://i.pinimg.com/736x/4f/10/f4/4f10f48f8a43dc66940ce4fe97849d84.jpg" alt="Profile picture">
-      <h3>Amy</h3>
-      <p>Student • Creator • Beginner Coder</p>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      Hi! My name is Amy. I enjoy being creative, learning new things,
-      and making websites. I’m currently practicing coding and building
-      my own projects.
-    </p>
-  </section>
-
-  <section id="hobbies" class="section">
-    <h2>Things I Like</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>🎨 Creativity</h3>
-        <p>I like making things look pretty and aesthetic.</p>
-      </div>
-
-      <div class="card">
-        <h3>💻 Coding</h3>
-        <p>I’m learning HTML, CSS, and JavaScript.</p>
-      </div>
-
-      <div class="card">
-        <h3>🌸 My Style</h3>
-        <p>I like cute, clean, and modern designs.</p>
-      </div>
+    <div class="hero-card">
+      <div class="profile-circle">A</div>
+      <h2>Amy</h2>
+      <p>Student • Web Creator • Beginner Developer</p>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>You can add your socials or email here later.</p>
-    <a href="https://github.com/ButterflyAmy" target="_blank">My GitHub</a>
+  <section class="section" id="about">
+    <div class="section-heading">
+      <p>About</p>
+      <h2>Who I Am</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Hi, I’m Amy. I enjoy creating websites that look organized,
+          professional, and easy to use. I’m currently learning how to build
+          better web pages using HTML, CSS, and JavaScript.
+        </p>
+        <p>
+          This website is a place where I can introduce myself, show what I’m
+          learning, and keep improving my design and coding skills.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <div>
+          <span>Name</span>
+          <strong>Amy</strong>
+        </div>
+        <div>
+          <span>Focus</span>
+          <strong>Web Design</strong>
+        </div>
+        <div>
+          <span>Learning</span>
+          <strong>HTML, CSS, JavaScript</strong>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2026 Amy. Made with HTML, CSS & JavaScript.</p>
-  </footer>
+  <section class="section dark-section" id="skills">
+    <div class="section-heading">
+      <p>Skills</p>
+      <h2>What I’m Learning</h2>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <p>Building the structure of websites with clean and organized code.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <p>Designing layouts, colors, spacing, responsive pages, and animations.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>Adding interaction, buttons, menus, and dynamic website behavior.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-heading">
+      <p>Projects</p>
+      <h2>My Work</h2>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-number">01</div>
+        <h3>About Me Website</h3>
+        <p>A clean personal website made with HTML, CSS, and JavaScript.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">02</div>
+        <h3>Future Portfolio</h3>
+        <p>A place where I can add my future coding projects and designs.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">03</div>
+        <h3>Creative Ideas</h3>
+        <p>Small interactive pages, quizzes, and aesthetic web experiments.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s Connect</h2>
+      <p>You can add your email, GitHub, or social links here.</p>
+    </div>
+
+    <a href="https://github.com/ButterflyAmy" target="_blank" class="btn primary">
+      Visit My GitHub
+    </a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Amy. Built with HTML, CSS & JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
