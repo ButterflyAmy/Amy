@@ -2,152 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amy | Personal Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amy | Aesthetic Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
 <header class="header">
-  <a href="#" class="logo">Amy</a>
+  <div class="logo">amy</div>
 
   <nav class="nav" id="nav">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#home">home</a>
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
   </nav>
 
-  <button class="menu-btn" id="menuBtn">☰</button>
+  <button id="menuBtn">☰</button>
 </header>
 
-<main>
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <p class="eyebrow">Personal Website</p>
-      <h1>Hello, I’m <span>Amy</span>.</h1>
-      <p class="hero-description">
-        A creative student learning web development and building clean,
-        modern websites with HTML, CSS, and JavaScript.
-      </p>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="eyebrow">welcome to my space</p>
+    <h1>hi, i’m <span>amy</span></h1>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View My Work</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
+    <p class="desc">
+      a soft creative learning web design, building aesthetic
+      and clean websites that feel calm, minimal, and beautiful.
+    </p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn primary">view work</a>
+      <a href="#contact" class="btn ghost">contact</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="avatar">A</div>
+    <h3>amy</h3>
+    <p>student • creative • web learner</p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>about me</h2>
+
+  <div class="about-grid">
+    <p>
+      i love creating soft, aesthetic websites that feel cozy and clean.
+      i’m currently learning html, css, and javascript while improving my design sense.
+    </p>
+
+    <div class="about-card">
+      <p><strong>focus</strong> — web design</p>
+      <p><strong>learning</strong> — html, css, js</p>
+      <p><strong>style</strong> — minimal & aesthetic</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <h2>skills</h2>
+
+  <div class="grid">
+    <div class="card">html</div>
+    <div class="card">css</div>
+    <div class="card">javascript</div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <h2>projects</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h4>about me site</h4>
+      <p>clean personal website</p>
     </div>
 
-    <div class="hero-card">
-      <div class="profile-circle">A</div>
-      <h2>Amy</h2>
-      <p>Student • Web Creator • Beginner Developer</p>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="section-heading">
-      <p>About</p>
-      <h2>Who I Am</h2>
+    <div class="card">
+      <h4>future portfolio</h4>
+      <p>my upcoming designs</p>
     </div>
 
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          Hi, I’m Amy. I enjoy creating websites that look organized,
-          professional, and easy to use. I’m currently learning how to build
-          better web pages using HTML, CSS, and JavaScript.
-        </p>
-        <p>
-          This website is a place where I can introduce myself, show what I’m
-          learning, and keep improving my design and coding skills.
-        </p>
-      </div>
-
-      <div class="info-box">
-        <div>
-          <span>Name</span>
-          <strong>Amy</strong>
-        </div>
-        <div>
-          <span>Focus</span>
-          <strong>Web Design</strong>
-        </div>
-        <div>
-          <span>Learning</span>
-          <strong>HTML, CSS, JavaScript</strong>
-        </div>
-      </div>
+    <div class="card">
+      <h4>creative pages</h4>
+      <p>fun aesthetic experiments</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section dark-section" id="skills">
-    <div class="section-heading">
-      <p>Skills</p>
-      <h2>What I’m Learning</h2>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>HTML</h3>
-        <p>Building the structure of websites with clean and organized code.</p>
-      </div>
-
-      <div class="skill-card">
-        <h3>CSS</h3>
-        <p>Designing layouts, colors, spacing, responsive pages, and animations.</p>
-      </div>
-
-      <div class="skill-card">
-        <h3>JavaScript</h3>
-        <p>Adding interaction, buttons, menus, and dynamic website behavior.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="projects">
-    <div class="section-heading">
-      <p>Projects</p>
-      <h2>My Work</h2>
-    </div>
-
-    <div class="projects-grid">
-      <article class="project-card">
-        <div class="project-number">01</div>
-        <h3>About Me Website</h3>
-        <p>A clean personal website made with HTML, CSS, and JavaScript.</p>
-      </article>
-
-      <article class="project-card">
-        <div class="project-number">02</div>
-        <h3>Future Portfolio</h3>
-        <p>A place where I can add my future coding projects and designs.</p>
-      </article>
-
-      <article class="project-card">
-        <div class="project-number">03</div>
-        <h3>Creative Ideas</h3>
-        <p>Small interactive pages, quizzes, and aesthetic web experiments.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div>
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s Connect</h2>
-      <p>You can add your email, GitHub, or social links here.</p>
-    </div>
-
-    <a href="https://github.com/ButterflyAmy" target="_blank" class="btn primary">
-      Visit My GitHub
-    </a>
-  </section>
-</main>
-
-<footer>
-  <p>© 2026 Amy. Built with HTML, CSS & JavaScript.</p>
-</footer>
+<section class="contact" id="contact">
+  <h2>let’s connect</h2>
+  <a href="https://github.com/ButterflyAmy" target="_blank" class="btn primary">
+    github
+  </a>
+</section>
 
 <script src="script.js"></script>
 </body>
