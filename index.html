@@ -1,19 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About Me</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amy | About Me</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="card">
-  <img src="https://via.placeholder.com/120" id="profile-pic">
-  <h1 id="name">Your Name</h1>
-  <p id="bio">Hi! I'm learning to build websites 💻</p>
+  <header class="navbar">
+    <h2>Amy</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <button onclick="changeText()">Click me!</button>
-</div>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tag">Hello, welcome to my website</p>
+      <h1>Hi, I’m <span>Amy</span></h1>
+      <p class="intro">
+        I’m learning how to build websites with HTML, CSS, and JavaScript.
+        This is my personal About Me page.
+      </p>
+      <button onclick="showMessage()">Click Me</button>
+      <p id="message"></p>
+    </div>
 
-<script src="script.js"></script>
+    <div class="profile-card">
+      <img src="https://i.pinimg.com/736x/4f/10/f4/4f10f48f8a43dc66940ce4fe97849d84.jpg" alt="Profile picture">
+      <h3>Amy</h3>
+      <p>Student • Creator • Beginner Coder</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      Hi! My name is Amy. I enjoy being creative, learning new things,
+      and making websites. I’m currently practicing coding and building
+      my own projects.
+    </p>
+  </section>
+
+  <section id="hobbies" class="section">
+    <h2>Things I Like</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🎨 Creativity</h3>
+        <p>I like making things look pretty and aesthetic.</p>
+      </div>
+
+      <div class="card">
+        <h3>💻 Coding</h3>
+        <p>I’m learning HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div class="card">
+        <h3>🌸 My Style</h3>
+        <p>I like cute, clean, and modern designs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>You can add your socials or email here later.</p>
+    <a href="https://github.com/ButterflyAmy" target="_blank">My GitHub</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Amy. Made with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
