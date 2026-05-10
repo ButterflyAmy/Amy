@@ -18,7 +18,9 @@
   box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -31,18 +33,23 @@ body {
 }
 
 body::before {
-  content: "♡ ୨୧ ♡ ୨୧ ♡ ୨୧ ♡ ୨୧ ♡";
+  content: "♡ ♡ ♡ ♡ ♡";
   position: fixed;
   top: 90px;
   left: -20px;
   right: -20px;
   font-size: 3rem;
-  opacity: 0.08;
-  letter-spacing: 30px;
+  opacity: 0.06;
+  letter-spacing: 40px;
   pointer-events: none;
 }
 
-a { text-decoration: none; color: inherit; }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
 
 header {
   position: sticky;
@@ -72,9 +79,12 @@ nav a {
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 600;
+  transition: 0.25s;
 }
 
-nav a:hover { color: var(--hot); }
+nav a:hover {
+  color: var(--hot);
+}
 
 #menuBtn {
   display: none;
@@ -82,7 +92,10 @@ nav a:hover { color: var(--hot); }
   background: none;
   color: var(--hot);
   font-size: 1.6rem;
+  cursor: pointer;
 }
+
+/* HERO */
 
 .hero {
   min-height: 88vh;
@@ -93,7 +106,8 @@ nav a:hover { color: var(--hot); }
   align-items: center;
 }
 
-.tag, .label {
+.tag,
+.label {
   color: var(--hot);
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -102,7 +116,8 @@ nav a:hover { color: var(--hot); }
   margin-bottom: 18px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Playfair Display", serif;
   line-height: 1;
 }
@@ -123,6 +138,8 @@ h2 {
   line-height: 1.8;
   max-width: 650px;
 }
+
+/* BUTTONS */
 
 .buttons {
   margin-top: 32px;
@@ -155,6 +172,8 @@ h2 {
   color: var(--hot);
 }
 
+/* DOLL CARD */
+
 .doll-card {
   position: relative;
   padding: 38px;
@@ -181,19 +200,15 @@ h2 {
   margin-bottom: 16px;
 }
 
+/* PROFILE PICTURE */
+
 .avatar {
   width: 145px;
   height: 145px;
   margin: 0 auto 22px;
   border-radius: 50%;
-  background:
-    radial-gradient(circle at 30% 25%, white, transparent 18%),
-    linear-gradient(135deg, #ffc8df, #ff5cad, #6b2946);
-  color: white;
-  display: grid;
-  place-items: center;
-  font-size: 4rem;
-  font-family: "Playfair Display", serif;
+  object-fit: cover;
+  border: 4px solid #ffd1e7;
   box-shadow: 0 0 45px rgba(255, 92, 173, 0.45);
 }
 
@@ -214,6 +229,8 @@ h2 {
   font-weight: 800;
 }
 
+/* SECTIONS */
+
 .section {
   padding: 85px 8%;
 }
@@ -228,13 +245,14 @@ h2 {
 .info-card,
 .card,
 .project,
-.terminal,
-.opinion-box {
+.terminal {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 28px;
   box-shadow: var(--shadow);
 }
+
+/* INFO CARD */
 
 .info-card {
   padding: 26px;
@@ -251,6 +269,8 @@ h2 {
 .info-card b {
   color: var(--hot);
 }
+
+/* GRID */
 
 .grid {
   margin-top: 34px;
@@ -275,6 +295,8 @@ h2 {
   background: #fff8fb;
 }
 
+/* PROJECTS */
+
 .project-grid {
   margin-top: 34px;
   display: grid;
@@ -297,6 +319,8 @@ h2 {
   line-height: 1.7;
 }
 
+/* CURRENTLY */
+
 .terminal {
   margin-top: 32px;
   padding: 26px;
@@ -308,41 +332,7 @@ h2 {
   color: #6b2946;
 }
 
-.opinion-box {
-  margin-top: 28px;
-  max-width: 700px;
-  padding: 24px;
-  display: grid;
-  gap: 14px;
-}
-
-.opinion-box input,
-.opinion-box textarea {
-  width: 100%;
-  padding: 16px 18px;
-  border-radius: 18px;
-  border: 1px solid var(--line);
-  background: #fff8fb;
-  color: var(--text);
-  outline: none;
-  font-family: inherit;
-}
-
-.opinion-box textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-
-.opinion-box input::placeholder,
-.opinion-box textarea::placeholder {
-  color: #b58199;
-}
-
-.note {
-  margin-top: 14px;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
+/* CONTACT */
 
 .contact {
   margin: 70px 8%;
@@ -350,7 +340,11 @@ h2 {
   text-align: center;
   border-radius: 38px;
   background:
-    linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,154,203,0.28));
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.7),
+      rgba(255,154,203,0.28)
+    );
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
@@ -360,7 +354,10 @@ h2 {
   margin: 18px 0 28px;
 }
 
+/* MOBILE */
+
 @media (max-width: 850px) {
+
   nav {
     display: none;
     position: absolute;
@@ -375,9 +372,13 @@ h2 {
     box-shadow: var(--shadow);
   }
 
-  nav.open { display: flex; }
+  nav.open {
+    display: flex;
+  }
 
-  #menuBtn { display: block; }
+  #menuBtn {
+    display: block;
+  }
 
   .hero,
   .about-grid,
@@ -391,7 +392,10 @@ h2 {
 }
 
 @media (max-width: 500px) {
-  header, .hero, .section {
+
+  header,
+  .hero,
+  .section {
     padding-left: 6%;
     padding-right: 6%;
   }
