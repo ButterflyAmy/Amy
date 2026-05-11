@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amy — digital diary</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
+
+<div class="music-player">
+  <p id="songTitle">no song playing</p>
+
+  <div class="music-buttons">
+    <button id="playMusic">play ♡</button>
+    <button id="skipMusic">skip</button>
+  </div>
+
+  <audio id="audioPlayer"></audio>
+</div>
 
 <div class="sparkles"></div>
 
@@ -18,190 +30,178 @@
     <a href="#likes">likes</a>
     <a href="#dreams">dreams</a>
     <a href="#opinion">opinions</a>
-    <a href="#contact">contact</a>
   </nav>
 
   <button id="menuBtn">☰</button>
 </header>
 
 <section class="hero" id="home">
+
   <div class="hero-text">
-    <p class="tag">୨୧ programmer girl • pink archive • digital diary ୨୧</p>
+    <p class="tag">programmer girl • pink archive • digital diary</p>
 
     <h1>Amy</h1>
+
     <h2 class="strong-line">watch me get rich</h2>
 
     <p class="quote">“Tired, but I have goals.”</p>
 
     <div class="buttons">
       <a href="#about" class="btn primary">enter my world ♡</a>
-      <a href="https://github.com/ButterflyAmy" target="_blank" class="btn ghost">github</a>
+
+      <a href="https://github.com/ButterflyAmy"
+         target="_blank"
+         class="btn ghost">
+         github
+      </a>
     </div>
   </div>
 
   <div class="doll-card">
-    <div class="bow">୨୧</div>
 
     <img src="pfp.jpg" alt="Amy" class="avatar">
 
     <h2>Amy</h2>
 
     <p>
-      coding, dreaming, planning, and becoming everything
-      people thought i wouldn’t.
+      coding, dreaming, planning,
+      and becoming everything people thought i wouldn’t.
     </p>
 
     <span>pretty girls can code ♡</span>
+
   </div>
 </section>
 
 <section class="section" id="about">
+
   <p class="label">about me</p>
 
   <h2>coding feels like creating worlds.</h2>
 
   <div class="about-grid">
+
     <p>
       I’m Amy, 18, a programmer with big plans and an even bigger imagination.
       I create websites, write code, and I’m currently about to build my own game.
+
+      <br><br>
+
       For me, coding feels like creating worlds — turning ideas in my head into
       something people can actually see, click, and experience.
+
       <br><br>
+
       I want to get rich, not just for myself, but so I can give my mom and the
-      people I love everything they’ve ever wanted. Some people doubt me. Some
-      think I only talk and nothing will happen. Cute assumption, but wrong.
+      people I love everything they’ve ever wanted.
+
       <br><br>
-      I don’t always explain what I’m doing, because not everything needs to be
-      announced. I know what I’m building, and that’s enough.
+
+      Some people doubt me. Some think I only talk and nothing will happen.
+      Cute assumption, but wrong.
+
       <br><br>
-      Pinterest is one of my favorite places for visual inspiration. My interests
-      shift constantly, but that’s part of me — I’m always becoming someone new.
+
+      Pinterest is one of my favorite places for visual inspiration.
+      My interests shift constantly, but that’s part of me.
     </p>
 
     <div class="info-card">
       <p><b>name:</b> Amy</p>
       <p><b>age:</b> 18</p>
-      <p><b>focus:</b> programming, websites, game creation</p>
-      <p><b>energy:</b> tired but ambitious</p>
+      <p><b>focus:</b> websites + programming</p>
+      <p><b>dream:</b> rich life & freedom</p>
     </div>
+
   </div>
 </section>
 
 <section class="section" id="likes">
-  <p class="label">clickable lore</p>
 
-  <h2>things that live in my head.</h2>
-
-  <p class="small-text">click a card to see the lore ♡</p>
+  <p class="label">things i like</p>
 
   <div class="grid">
-    <button class="card lore-card" data-title="Art" data-text="Art is one of my favorite forms of expression. I love visuals that feel emotional, pretty, dramatic, or meaningful. Sometimes a picture explains a feeling better than words ever could.">♡ Art</button>
 
-    <button class="card lore-card" data-title="Food" data-text="Food is comfort, happiness, and a tiny reward for surviving the day. Pretty food, cozy meals, snacks, desserts — yes please.">♡ Food</button>
+    <button class="card">♡ Art</button>
+    <button class="card">♡ Food</button>
+    <button class="card">♡ Languages</button>
+    <button class="card">♡ Books</button>
+    <button class="card">♡ Coding</button>
+    <button class="card">♡ Psychology</button>
+    <button class="card">♡ Philosophy</button>
+    <button class="card">♡ Anime</button>
+    <button class="card">♡ Cats</button>
+    <button class="card">♡ Games</button>
+    <button class="card">♡ Money</button>
+    <button class="card">♡ Clothes</button>
 
-    <button class="card lore-card" data-title="Languages" data-text="Languages are so interesting to me because every language feels like a different way of seeing the world. I love the idea of understanding more people, more cultures, and more thoughts.">♡ Languages</button>
-
-    <button class="card lore-card" data-title="Books" data-text="Books feel like portals. I love stories, ideas, psychology, fantasy, and anything that makes my brain think differently.">♡ Books</button>
-
-    <button class="card lore-card" data-title="Coding" data-text="Coding feels like creating worlds. I can take an idea that only exists in my head and turn it into something real, interactive, and alive.">♡ Coding</button>
-
-    <button class="card lore-card" data-title="Psychology" data-text="I love psychology because people are complicated, and I like understanding why they act, think, love, lie, dream, and break the way they do.">♡ Psychology</button>
-
-    <button class="card lore-card" data-title="Philosophy" data-text="Philosophy makes me question everything in the best way. Life, success, meaning, identity, ambition — I like thinking deeper than the surface.">♡ Philosophy</button>
-
-    <button class="card lore-card" data-title="Anime" data-text="Anime is comfort, emotion, pretty visuals, powerful characters, and stories that stay in my head for way too long.">♡ Anime</button>
-
-    <button class="card lore-card" data-title="Cats" data-text="Cats are soft, dramatic, mysterious, cute, and somehow always the main character. I respect that energy.">♡ Cats</button>
-
-    <button class="card lore-card" data-title="Games" data-text="Games are worlds you can enter. Since I want to create my own game, I notice the designs, stories, details, characters, and emotions behind them.">♡ Games</button>
-
-    <button class="card lore-card" data-title="Money" data-text="Money means freedom. Money means options. Money means being able to take care of myself and the people I love. I don’t just want money — I want the life it can help me build.">♡ Money</button>
-
-    <button class="card lore-card" data-title="Clothes & Co." data-text="Clothes, accessories, beauty, cute details — all of it is part of self-expression. I love anything that makes a person look and feel like their own character.">♡ Clothes & co.</button>
   </div>
+
 </section>
 
-<section class="section dislikes">
+<section class="section">
+
   <p class="label">things i dislike</p>
 
-  <h2>not everything gets a heart.</h2>
-
   <div class="grid small-grid">
-    <button class="card lore-card" data-title="Eggs" data-text="No. Just no. Eggs are not for me.">✧ Eggs</button>
 
-    <button class="card lore-card" data-title="Ignorant people" data-text="I dislike people who refuse to understand anything outside their own opinion. Being wrong is okay. Staying ignorant on purpose is not.">✧ Ignorant people</button>
+    <button class="card">✧ Eggs</button>
+    <button class="card">✧ Ignorant people</button>
+    <button class="card">✧ Jealousy</button>
 
-    <button class="card lore-card" data-title="Jealousy" data-text="Jealousy is ugly when people use it to hate instead of improve themselves. I respect ambition, not bitterness.">✧ Jealousy</button>
   </div>
+
 </section>
 
 <section class="section" id="dreams">
+
   <p class="label">dreams</p>
 
-  <h2>I want success that changes lives.</h2>
-
   <div class="dream-card">
+
     <p>
-      I want to become rich and buy my mom and the people dear to me everything
-      they’ve ever wanted. Not just to prove people wrong, but because I remember
-      who mattered before the success.
+      I want to become rich and buy my mom and the people dear to me
+      everything they’ve ever wanted.
     </p>
+
   </div>
+
 </section>
 
 <section class="section currently">
-  <p class="label">currently</p>
 
-  <h2>amy update log.</h2>
+  <p class="label">currently</p>
 
   <div class="terminal">
     <p>♡ learning: html, css, javascript</p>
-    <p>♡ creating: websites + soon a game</p>
+    <p>♡ creating: websites + games</p>
     <p>♡ mood: tired but locked in</p>
-    <p>♡ goal: get rich and take care of my people</p>
+    <p>♡ goal: rich life</p>
   </div>
+
 </section>
 
 <section class="section" id="opinion">
+
   <p class="label">anonymous thoughts</p>
 
   <h2>write your opinion about me ♡</h2>
 
-  <p class="small-text">
-    leave a compliment, confession, random thought,
-    or tell me what vibe i give off.
-  </p>
-
   <div class="buttons">
+
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScWdOOkMTNnF5rj8gvnkxU_-dp4MRfwxJSd2wwgnJM7LUsH9w/viewform?usp=publish-editor"
        target="_blank"
        class="btn primary">
+
        write your opinion ♡
+
     </a>
+
   </div>
+
 </section>
-
-<section class="contact" id="contact">
-  <h2>find me online ♡</h2>
-
-  <p>or just admire from afar, that works too.</p>
-
-  <a href="https://github.com/ButterflyAmy"
-     target="_blank"
-     class="btn primary">
-     github
-  </a>
-</section>
-
-<div class="modal" id="modal">
-  <div class="modal-box">
-    <button class="close" id="closeModal">×</button>
-    <p class="label">amy lore</p>
-    <h2 id="modalTitle"></h2>
-    <p id="modalText"></p>
-  </div>
-</div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
