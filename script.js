@@ -24,6 +24,10 @@ const songs = [
   {
     title: "Born without a heart",
     file: "music/Born without a heart-lyrics #trending #music #song #lyrics #shorts.mp3"
+  },
+  {
+    title: "Ruler of my heart <3",
+    file: "music/W E I G E  Ruler Of My Heart  ALIEN STAGE.mp3"
   }
 ];
 
