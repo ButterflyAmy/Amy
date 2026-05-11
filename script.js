@@ -5,26 +5,89 @@ menuBtn.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
 
-const loreCards = document.querySelectorAll(".lore-card");
-const modal = document.getElementById("modal");
-const modalTitle = document.getElementById("modalTitle");
-const modalText = document.getElementById("modalText");
-const closeModal = document.getElementById("closeModal");
+const songs = [
+  {
+    title: "song 1",
+    file: "music/song1.mp3"
+  },
 
-loreCards.forEach((card) => {
-  card.addEventListener("click", () => {
-    modalTitle.textContent = card.dataset.title;
-    modalText.textContent = card.dataset.text;
-    modal.classList.add("show");
-  });
-});
+  {
+    title: "song 2",
+    file: "music/song2.mp3"
+  },
 
-closeModal.addEventListener("click", () => {
-  modal.classList.remove("show");
-});
+  {
+    title: "song 3",
+    file: "music/song3.mp3"
+  },
 
-modal.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.classList.remove("show");
+  {
+    title: "song 4",
+    file: "music/song4.mp3"
   }
+];
+
+const audioPlayer = document.getElementById("audioPlayer");
+const playMusic = document.getElementById("playMusic");
+const skipMusic = document.getElementById("skipMusic");
+const songTitle = document.getElementById("songTitle");
+
+let currentSong = -1;
+let playing = false;
+
+function randomSong(){
+
+  let random;
+
+  do{
+    random = Math.floor(Math.random() * songs.length);
+  }
+
+  while(random === currentSong);
+
+  currentSong = random;
+
+  audioPlayer.src = songs[currentSong].file;
+
+  songTitle.textContent = songs[currentSong].title;
+
+  audioPlayer.play();
+
+  playing = true;
+
+  playMusic.textContent = "pause";
+}
+
+playMusic.addEventListener("click", () => {
+
+  if(!playing){
+
+    if(audioPlayer.src === ""){
+      randomSong();
+    }
+
+    else{
+      audioPlayer.play();
+    }
+
+    playing = true;
+    playMusic.textContent = "pause";
+  }
+
+  else{
+    audioPlayer.pause();
+
+    playing = false;
+
+    playMusic.textContent = "play ♡";
+  }
+
+});
+
+skipMusic.addEventListener("click", () => {
+  randomSong();
+});
+
+audioPlayer.addEventListener("ended", () => {
+  randomSong();
 });
