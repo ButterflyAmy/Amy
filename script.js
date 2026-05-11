@@ -100,3 +100,13 @@ modal.addEventListener("click", (event) => {
     modal.classList.remove("show");
   }
 });
+
+const welcomeScreen = document.getElementById("welcomeScreen");
+const enterSite = document.getElementById("enterSite");
+const musicPlayerBox = document.querySelector(".music-player");
+
+enterSite.addEventListener("click", () => {
+  welcomeScreen.classList.add("hide");
+  musicPlayerBox.style.display = "block";
+  randomSong();
+});
