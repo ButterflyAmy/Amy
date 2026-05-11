@@ -399,34 +399,34 @@ h1 {
 
 @media(max-width: 850px) {
   nav {
-    display: none;
-    position: absolute;
-    top: 66px;
-    right: 8%;
-    width: 220px;
-    padding: 20px;
-    flex-direction: column;
-    background: #fff8fb;
-    border: 1px solid var(--line);
-    border-radius: 22px;
-    box-shadow: var(--shadow);
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
   }
 
-  nav.open {
-    display: flex;
+  header {
+    flex-direction: column;
+    gap: 10px;
   }
 
   #menuBtn {
-    display: block;
-    border: none;
-    background: none;
-    color: var(--hot);
-    font-size: 1.5rem;
+    display: none;
   }
 
-  .hero,
-  .about-grid {
-    grid-template-columns: 1fr;
+  .hero {
+    grid-template-columns: 1fr 0.85fr;
+    gap: 20px;
+    padding: 45px 5%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .strong-line {
+    font-size: 2rem;
   }
 
   .grid,
@@ -434,17 +434,42 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .about-grid {
+    grid-template-columns: 1fr 0.75fr;
+  }
+
   .music-player {
-    left: 6%;
-    right: 6%;
+    right: 14px;
     bottom: 14px;
-    width: auto;
+    width: 220px;
   }
 }
 
 @media(max-width: 500px) {
+  .hero {
+    grid-template-columns: 1fr 0.85fr;
+  }
+
+  .section {
+    padding: 45px 5%;
+  }
+
   .grid,
   .small-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    min-height: 95px;
+    padding: 16px;
+  }
+
+  .doll-card {
+    padding: 22px;
+  }
+
+  .avatar {
+    width: 105px;
+    height: 105px;
   }
 }
