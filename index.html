@@ -13,12 +13,10 @@
   <div class="welcome-box">
     <p class="label">welcome to amy’s world</p>
     <h2>enter my little universe?</h2>
-
     <p>
-      pink archive, coding dreams, random lore,
+      pink archive, coding dreams, anime lore,
       and a playlist for the girls with goals.
     </p>
-
     <button id="enterSite" class="btn primary">let’s go ♡</button>
   </div>
 </div>
@@ -128,7 +126,54 @@
 
     <button class="card lore-card" data-title="Philosophy" data-text="Philosophy makes me question everything in the best way: life, success, meaning, identity, ambition, and becoming.">♡ Philosophy</button>
 
-    <button class="card lore-card" data-title="Anime" data-text="Anime is comfort, emotion, pretty visuals, powerful characters, and stories that stay in my head for way too long.">♡ Anime</button>
+    <button 
+      class="card lore-card"
+      data-title="Anime"
+      data-text="Anime is comfort, emotion, pretty visuals, powerful characters, and stories that stay in my head for way too long."
+      data-extra='
+        <div class="anime-entry left">
+          <img src="images/naruto.jpg" alt="Naruto">
+          <div>
+            <h3>Naruto</h3>
+            <p>Naruto changed the way I think about loneliness, ambition, friendship, and never giving up even when nobody believes in you.</p>
+          </div>
+        </div>
+
+        <div class="anime-entry right">
+          <img src="images/aot.jpg" alt="Attack on Titan">
+          <div>
+            <h3>Attack on Titan</h3>
+            <p>Attack on Titan feels huge emotionally. The music, plot twists, characters, pain, and meaning behind everything make it unforgettable.</p>
+          </div>
+        </div>
+
+        <div class="anime-entry left">
+          <img src="images/haikyuu.jpg" alt="Haikyuu">
+          <div>
+            <h3>Haikyuu</h3>
+            <p>Haikyuu is one of the most motivating animes ever. It makes hard work, teamwork, and improving yourself feel exciting.</p>
+          </div>
+        </div>
+
+        <div class="anime-entry right">
+          <img src="images/linkclick.jpg" alt="Link Click">
+          <div>
+            <h3>Link Click</h3>
+            <p>Link Click feels emotional, mysterious, beautiful, and nostalgic. It has that kind of story that stays in your head after watching.</p>
+          </div>
+        </div>
+
+        <div class="anime-paragraph">
+          Anime is comfort, inspiration, aesthetics, storytelling, music, and characters that stay in my head forever. Some animes genuinely changed the way I think.
+        </div>
+
+        <div class="watched-list">
+          <h3>animes i’ve watched ♡</h3>
+          <p>Naruto • Attack on Titan • Haikyuu • Link Click</p>
+          <p class="tiny-note">add the rest here later.</p>
+        </div>
+      '
+    >♡ Anime</button>
 
     <button class="card lore-card" data-title="Cats" data-text="Cats are soft, dramatic, mysterious, cute, and somehow always the main character. I respect that energy.">♡ Cats</button>
 
@@ -194,6 +239,7 @@
     <p class="label">amy lore</p>
     <h2 id="modalTitle"></h2>
     <p id="modalText"></p>
+    <div id="modalExtra"></div>
   </div>
 </div>
 
