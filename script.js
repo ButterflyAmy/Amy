@@ -81,12 +81,14 @@ const loreCards = document.querySelectorAll(".lore-card");
 const modal = document.getElementById("modal");
 const modalTitle = document.getElementById("modalTitle");
 const modalText = document.getElementById("modalText");
+const modalExtra = document.getElementById("modalExtra");
 const closeModal = document.getElementById("closeModal");
 
 loreCards.forEach((card) => {
   card.addEventListener("click", () => {
     modalTitle.textContent = card.dataset.title;
     modalText.textContent = card.dataset.text;
+    modalExtra.innerHTML = card.dataset.extra || "";
     modal.classList.add("show");
   });
 });
