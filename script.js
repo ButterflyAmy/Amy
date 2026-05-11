@@ -12,12 +12,12 @@ const songs = [
   },
 
   {
-    title: "song 2",
-    file: "music/song2.mp3"
+    title: "Medicine",
+    file: "music/Daughter - Medicine ( Audio Edit ).mp3"
   },
 
   {
-    title: "song 3",
+    title: "Monsoon",
     file: "music/song3.mp3"
   },
 
