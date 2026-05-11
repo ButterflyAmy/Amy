@@ -7,8 +7,8 @@ menuBtn.addEventListener("click", () => {
 
 const songs = [
   {
-    title: "song 1",
-    file: "music/song1.mp3"
+    title: "Come back home",
+    file: "music/2NE1  COME BACK HOME  NIGHTCORE.mp3"
   },
 
   {
