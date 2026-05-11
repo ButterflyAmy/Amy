@@ -32,6 +32,46 @@ body {
 
 a { color: inherit; }
 
+.welcome-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background:
+    radial-gradient(circle at top left, #ffd1e7, transparent 35%),
+    radial-gradient(circle at bottom right, #ffb6d8, transparent 35%),
+    rgba(255, 242, 248, 0.96);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.welcome-screen.hide {
+  display: none;
+}
+
+.welcome-box {
+  width: min(520px, 100%);
+  padding: 42px;
+  text-align: center;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.welcome-box h2 {
+  color: var(--hot);
+  margin-bottom: 18px;
+}
+
+.welcome-box p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
 .sparkles::before,
 .sparkles::after {
   content: "♡ ✦ ♡ ✧ ♡ ✦ ♡";
@@ -91,8 +131,6 @@ nav a {
   display: none;
 }
 
-/* HERO */
-
 .hero {
   position: relative;
   z-index: 1;
@@ -148,6 +186,8 @@ h1 {
   text-decoration: none;
   display: inline-block;
   transition: 0.25s;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -193,8 +233,6 @@ h1 {
   color: var(--hot);
   font-weight: 700;
 }
-
-/* SECTIONS */
 
 .section {
   position: relative;
@@ -273,9 +311,8 @@ h1 {
   font-family: monospace;
 }
 
-/* MUSIC */
-
 .music-player {
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -309,8 +346,6 @@ h1 {
   font-weight: 700;
   cursor: pointer;
 }
-
-/* MODAL */
 
 .modal {
   position: fixed;
@@ -361,8 +396,6 @@ h1 {
   font-size: 1.4rem;
   cursor: pointer;
 }
-
-/* MOBILE */
 
 @media(max-width: 850px) {
   nav {
